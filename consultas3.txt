@@ -10,7 +10,7 @@ select emp.FIRST_NAME as empleado,rop.FECHA as FECHA_DE_COMPRA,pro.DESCRIPCION,p
                                                   where FIRST_NAME='LUIS')
         );
                      
-
+-----------------------------------------------
 select descripcion , titulo, PRODUCTO_ID, registro
 from productos
 where PRODUCTO_ID in (   select producto_id
@@ -24,26 +24,8 @@ where PRODUCTO_ID in (   select producto_id
                      
 ------------------------------------------------------
 
-create or replace FUNCTION amuento_sueldo(sal number)
- RETURN varchar2 
- 
- IS 
-  
-   sueldo varchar2(20) :='no aumento';
-  BEGIN 
-     
-      if sal > 4000 and sal<10000 then 
-       
-        sueldo :='aumento de sueldo x2';
-        
-        ELSIF sal >10000 then
-        sueldo :='aumento de sueldo x3 ';
-        else 
-        sueldo :='no aumenta ';
-      end if;
-        return sueldo;
-END ;
 
+2-----------------------------------------------
 create or replace FUNCTION dame_nombre(id varchar2)
  RETURN varchar2 
  
