@@ -1,7 +1,7 @@
 --start productos data
 
 INSERT INTO PRODUCTOS VALUES (
-  '00001',
+   1,
   'EMPANADA',
   'EMPANADA PA LOS PANA',
   '990444739',
@@ -11,7 +11,7 @@ INSERT INTO PRODUCTOS VALUES (
 );
 
 INSERT INTO PRODUCTOS VALUES (
-  '00002',
+  2,
   'PASTELES NO EMPANADAS',
   'PASTELES PA MAMA',
   '990234734',
@@ -21,7 +21,7 @@ INSERT INTO PRODUCTOS VALUES (
 );
 
 INSERT INTO PRODUCTOS VALUES (
-  '00003',
+  3,
   'EMPANADAAS NO PASTELES',
   'EMPANADAS PA MAMA',
   '990234739',
@@ -31,7 +31,7 @@ INSERT INTO PRODUCTOS VALUES (
 );
 
 INSERT INTO PRODUCTOS VALUES (
-  '00004',
+  4,
   'TEKCHONGOS',
   'RICO PA',
   '990232379',
@@ -41,7 +41,7 @@ INSERT INTO PRODUCTOS VALUES (
 );
 
 INSERT INTO PRODUCTOS VALUES (
-  '00005',
+  5,
   'YUKA PA',
   'PA TI PAPA',
   '990294230',
@@ -50,41 +50,12 @@ INSERT INTO PRODUCTOS VALUES (
   '058467623'
 );
 
-INSERT INTO PRODUCTOS VALUES (
-  '00006',
-  'CHURROS',
-  'CHURROS MUY BUENOS',
-  '990224739',
-  '857114023',
-  '1234', 
-  NULL
-);
-
-INSERT INTO PRODUCTOS VALUES (
-  '00007',
-  'POLLO',
-  'POLLOS GRANDES',
-  '12044119',
-  '347494023',
-  '1176', 
-  NULL
-);
-
-INSERT INTO PRODUCTOS VALUES (
-  '00008',
-  'NUGUETS',
-  'NUGUETS BUENOS',
-  '93748433',
-  '239344',
-  '31333', 
-  NULL
-);
-
 commit;
 -- end productos data
 -- start EMPLEADOS
+
 INSERT INTO EMPLEADOS VALUES (
-	'0001',
+	1,
 	'YASIIKE',
 	'GASMILE',
 	'26205990',
@@ -92,7 +63,7 @@ INSERT INTO EMPLEADOS VALUES (
 );
 
 INSERT INTO EMPLEADOS VALUES (
-	'0002',
+	2,
 	'LUIS',
 	'PANITA',
 	'42205990',
@@ -100,7 +71,7 @@ INSERT INTO EMPLEADOS VALUES (
 );
 
 INSERT INTO EMPLEADOS VALUES (
-	'0003',
+	3,
 	'ANTONELLA',
 	'LAURANO',
 	'24674982',
@@ -108,7 +79,7 @@ INSERT INTO EMPLEADOS VALUES (
 );
 
 INSERT INTO EMPLEADOS VALUES (
-	'0004',
+	4,
 	'DANIEL',
 	'NO RECUERDO',
 	'1048489303',
@@ -116,65 +87,42 @@ INSERT INTO EMPLEADOS VALUES (
 );
 
 INSERT INTO EMPLEADOS VALUES (
-	'0005',
+	5,
 	'MARIO',
 	'GRIECO',
 	'26305981',
 	'MARIOJOSUEXZ@GMAIL.COM'
 );
 
-INSERT INTO EMPLEADOS VALUES (
-	'0006',
-	'PEDRO',
-	'MARTINEZ',
-	'26123444',
-	'MARIXZ@GMAIL.COM'
-);
-
-INSERT INTO EMPLEADOS VALUES (
-	'0007',
-	'KATY',
-	'KATE',
-	'21123444',
-	'KATY@GMAIL.COM'
-);
-
-INSERT INTO EMPLEADOS VALUES (
-	'0008',
-	'ZOILA',
-	'BECERRA',
-	'12345678',
-	'TRRTRT@GMAIL.COM'
-);
 COMMIT;
 -- end EMPLEADOS
 --star clientes
-    INSERT INTO CLIENTES VALUES (
-        '001',
-        'datos 1',
-        'WILLIAM@GMAIL.COM'
+INSERT INTO CLIENTES VALUES (
+       1,
+       'datos 1',
+       'WILLIAM@GMAIL.COM'
     
-    );
+);
      INSERT INTO CLIENTES VALUES (
-        '002',
+        2,
         'datos 2',
         'MARIO@GMAIL.COM'
     
     );
     INSERT INTO CLIENTES VALUES (
-        '003',
+        3,
         'datos 3',
         'MARIA@GMAIL.COM'
     
     );
    INSERT INTO CLIENTES VALUES (
-        '004',
+        4,
         'datos 4',
         'YENIFER@GMAIL.COM'
     
     );
   INSERT INTO CLIENTES VALUES (
-        '005',
+        5,
         'datos 5',
         'YESICA@GMAIL.COM'
     
@@ -183,75 +131,75 @@ COMMIT;
 -- start REGISTRO_TELEFONO_EMP
 
 	INSERT INTO REGISTRO_TELEFONO_EMP VALUES (
-			'001',
+			1,
 			'5849301235',
-			'0003'
+			3
 	);
 
   	INSERT INTO REGISTRO_TELEFONO_EMP VALUES (
-			'002',
+			2,
 			'1312312512',
-			'0005'
+			5
 	);
   	INSERT INTO REGISTRO_TELEFONO_EMP VALUES (
-			'003',
+			3,
 			'574146029280',
-			'0001'
+			1
 	);
   	INSERT INTO REGISTRO_TELEFONO_EMP VALUES (
-			'004',
+			4,
 			'582347593',
-			'0004'
+			4
 	);
   	INSERT INTO REGISTRO_TELEFONO_EMP VALUES (
-			'005',
+			5,
 			'58234759224',
-			'0003'
+			3
 	);
 
 COMMIT;
 -- end REGISTRO_TELEFONO_EMP
 --  start REGISTRO_OP
 	INSERT INTO REGISTRO_OP VALUES (
-		'1' ,
+		1,
 		'V',
 		TO_DATE(sysdate, 'dd-mm-yyy'),
-		'00001',
-        '0001',
+		1,
+        1,
         '990444739',
         '9876', 
-        '1'
+        1
 	);
 
 	INSERT INTO REGISTRO_OP VALUES (
-		'2' ,
+		2 ,
 		'V',
 		TO_DATE(sysdate, 'dd-mm-yyy'),
-		'00002',
-        '0002',
+		2,
+        2,
         '990234734',
         '9875',
-        '2'
+        2
 	);
   	INSERT INTO REGISTRO_OP VALUES (
-		'3' ,
+		3 ,
 		'D',
 		TO_DATE(sysdate, 'dd-mm-yyy'),
-		'00003',
-        '0003',
+		3,
+        3,
         '990234739',
         '759832474',
-        '3'
+        3
 	);
   	INSERT INTO REGISTRO_OP VALUES (
-		'4' ,
+		4 ,
 		'V',
 		TO_DATE(sysdate, 'dd-mm-yyy'),
-		'00004',
-        '0004',
+		4,
+        4,
         '990232379',
         '759898234',
-        '4'
+        4
 	); 
   
         	
@@ -259,91 +207,91 @@ COMMIT;
 --star detalle_pro
 
 INSERT INTO DETALLE_PRO VALUES(
-        '00001',
+        1,
         300,
         20,
-        '00001',
+        1,
         '990444739',
         '9876'
 );
 INSERT INTO DETALLE_PRO VALUES(
-        '00002',
+        2,
         240,
         10,
-        '00002',
+        2,
         '990234734',
         '9875'
 );
 INSERT INTO DETALLE_PRO VALUES(
-        '00003',
+        3,
         40,
         120,
-        '00003',
+        3,
         '990234739',
         '759832474'
 );
 INSERT INTO DETALLE_PRO VALUES(
-        '00004',
+        4,
         440,
         220,
-        '00004',
+        4,
         '990232379',
         '759898234'
 );
 --end detalle_pro
 INSERT INTO DETALLE_OP VALUES(
     
-      '000001',
+      1,
       300,
       20,
       30,
       12,
-      '1',
-      '0001',
+      1,
+      1,
       '990444739',
       '9876',
-      '001'
+      1
       
 );
 INSERT INTO DETALLE_OP VALUES(
     
-      '000002',
+      2,
       240,
       10,
       40,
       18,
-      '2',
-      '0002',
+      2,
+      2,
       '990234734',
       '9875',
-      '002'
+      2
       
 );
 INSERT INTO DETALLE_OP VALUES(
     
-      '000003',
+      3,
       40,
       120,
       15,
       12,
-      '3',
-      '0003',
+      3,
+      3,
       '990234739',
       '759832474',
-      '003'
+      3
       
 );
 INSERT INTO DETALLE_OP VALUES(
     
-      '000004',
+      4,
       440,
       220,
       23,
       11,
-      '4',
-      '0004',
+      4,
+      4,
       '990232379',
       '759898234',
-      '004'
+      4
       
 );
